@@ -55,7 +55,7 @@ def draw_heat_map():
     fig, ax = plt.subplots(figsize=(10, 8))
 
     # Draw the heatmap with 'sns.heatmap()'
-    sns.heatmap(corr, mask=mask, annot=True, fmt=".2f", cmap='coolwarm', vmin=-1, vmax=1, center=0, square=True, linewidths=.5, cbar_kws={"shrink": .5})
+    sns.heatmap(corr, mask=mask, annot=True, fmt=".1f", cmap='coolwarm', vmin=-1, vmax=1, center=0, square=True, linewidths=.5, cbar_kws={"shrink": .5})
     ax.set_title('Correlation Matrix')
     plt.yticks(rotation=0)
     plt.xticks(rotation=45)
